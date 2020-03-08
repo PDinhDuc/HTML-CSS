@@ -1,0 +1,176 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+}
+.clr {
+	clear: both;
+}
+h3 {
+	display: inline-block;
+	text-shadow: 2px -2px 2px black;
+	margin: 20px auto;
+}
+#switch-ip {
+	width: 300px;
+margin: 50px auto;
+	position: relative;
+	background: red;
+	height: 80px;
+	box-shadow: 0px 3px 2px red;
+}
+#switch-ip > .chbx2 > span {
+	width: 38px;
+	height: 38px;
+	border: 1px solid white;
+	display: inline-block;
+	border-radius: 19px;
+	background: white;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
+#switch-ip > .chbx1 > span {
+	width: 38px;
+	height: 38px;
+	border: 1px solid white;
+	display: inline-block;
+	border-radius: 19px;
+	background: white;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+    box-shadow: 1px 0px 5px black;
+}
+#switch-ip > .chbx2 > span {
+	width: 38px;
+	height: 38px;
+	border: 1px solid white;
+	display: inline-block;
+	border-radius: 19px;
+	background: white;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+    box-shadow: 1px 0px 5px black;
+}
+[type="checkbox"] {
+	display: none;
+}
+#switch-ip #chbx2:checked + .chbx2 {
+	background: #27cc27;
+}
+#switch-ip #chbx2:checked + .chbx2 > span {
+	right: 1px;
+	left: auto;
+}
+#switch-ip #chbx1:checked + .chbx1 > span {
+	right: 1px;
+	left: auto;
+}
+#switch-ip #chbx1:checked + .chbx1 {
+	background: #27cc27;
+}
+#switch-ip #chbx1:checked ~ .chbx2 {
+	display: inline-block;
+}
+#switch-ip > .chbx2 {
+	width: 80px;
+	height: 40px;
+	background: #dcc4c4;
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border-radius: 20px;
+	position: relative;
+}
+#switch-ip > .chbx1 {
+	width: 80px;
+	height: 40px;
+	background: #dcc4c4;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border-radius: 20px;
+	position: relative;
+}
+
+
+/*================================================*/
+#tab {
+	position: absolute;
+	left: -3000px;
+	top: 105%;
+	transition: all 0.3s;
+	width: 500px;
+	background: #ab9c9c;
+}
+
+.tab-header label:hover {
+	background: #b97979;
+}
+.tab-header {
+	background: #867f7f;
+}
+.tab-header label {
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	border-right: 1px solid black;
+	float: left;
+}
+#switch-ip #chbx2:checked ~ div#tab {
+	left: 0px;
+	border: 1px solid black;
+}
+.tab-content input,.tab-content span {
+	display: none;
+}
+
+.tab-content input:checked + span {
+	display: block;
+	margin-left: 20px; 
+}
+
+.tab-content {
+	background:  #ab9c9c;
+	height: 300px;
+}
+/*=========================================*/
+
+
+#button {
+	position: relative;
+	width: 160px;
+	height: 50px;
+	border-radius: 25px;
+}
+.btn {
+	width: 160px;
+	height: 50px;
+	border-radius: 25px;
+	border-bottom: white;
+	background: white;
+	box-shadow: 0px 2px 3px rgba( 0, 0, 0, 0.4)
+}
+.btn span:nth-child(2) {
+	background-image: url(icon-right.png);
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.btn span:nth-child(1) {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20px;
+    left: 25px;
+}
