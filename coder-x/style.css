@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  color: #7a8994;
+}
+body {
+  background: #F7F6F1;
+}
+a {
+  text-decoration: none;
+}
+#sidebar-left {
+  position: absolute;
+  bottom: 20px;
+  left:20px;
+}
+#sidebar {
+  float: right;
+  width: 500px;
+  background: white;
+  height: 970px;
+}
+.sidebar {
+  margin: 80px 70px;
+}
+.sidebar img {
+  height: 32px;
+  width: 160px;
+}
+.sidebar > p {
+  margin-top: 35px;
+}
+.sidebar form {
+  margin-top: 15px;
+}
+.sidebar input:not(:nth-child(3)) {
+  height: 54px;
+  width: 360px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 15px;
+  border:1px solid slategray;
+  border-radius: 3px;
+}
+.sidebar input:nth-child(3) {
+  height: 35px;
+  width: 120px;
+  background-color: #1084ec;
+  color: white;
+}
+div.sidebar form > a {
+  float: right;
+  margin-top: 10px;
+  color: #3B5998;
+}
+div.btn {
+  margin-top: 15px;
+}
+div.btn button {
+  height: 35px;
+  width: 360px;
+  margin-bottom: 8px;
+  color: white;
+}
+div.btn button:first-child {
+  background-color: #0064bc;
+}
+div.btn button:last-child {
+  background-color: #C23321;
+}
+p > a {
+  color: #0064bc;
+}
+div.btn button:last-child:hover {
+  background-color: rgb(124, 25, 12);
+}
+div.btn button:first-child:hover {
+  background-color: #064f90;
+}
+.sidebar input:nth-child(3):hover {
+  background-color: #469eec;
+}
