@@ -119,6 +119,7 @@ a {
   height: 300px;
   border: 1px solid black;
   background: linear-gradient(to bottom , yellow, rgb(96, 199, 96));
+  z-index: 1;
 }
 .header-2 ul li:hover {
   background-color: rgb(37, 100, 218);
@@ -202,6 +203,8 @@ body {
 }
 .menu > ul > li:hover > div {
   display: block;
+  z-index: 1;
+  background: gray;
 }
 .img-content {
   display: flex;
