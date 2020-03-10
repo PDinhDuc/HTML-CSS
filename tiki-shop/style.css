@@ -1,0 +1,273 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family:  "Roboto", Helvetica, Arial, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header-1 {
+  height: 50px;
+  width: 100%;
+  background-image:url(https://salt.tikicdn.com/ts/banner/62/f2/1b/5b59724a39d758ee8413e39294073ad4.jpg), linear-gradient(to right,#8651F7,#3F2DCF);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center; 
+}
+.header-2 {
+  height: 28px;
+  background-color: #1D71AB;
+  display: flex;
+  justify-content: center;
+}
+.header-2 ul {
+  height: 28px;
+  width: 1240px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-2 ul li a img {
+  width: 18px;
+  height: 18px;
+}
+.header-2 ul li a {
+  font-size: 12px;
+  color: white;
+}
+.header-2 ul li {
+  padding-left: 40px;
+}
+.header-3 {
+  background-color: #189EFF;
+}
+.header-3 div:first-child {
+  width: 1240px;
+  margin: 0px auto;
+  display: flex;
+  height: 76px;
+  align-items: center;
+}
+.header-3 div:first-child img {
+  width: 140px;
+  height: 33px;
+  border: 1px solid rgba(0, 0, 0 , 0.1);
+  margin-right: 3px;
+}
+.header-3 div:first-child form input {
+  height: 40px;
+}
+.header-3 div:first-child form input:nth-child(1) {
+  width: 350px;
+  padding: 0px 10px;
+}
+.header-3 div:first-child ul {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 150px - 410px);
+  height: 40px;
+  line-height: 40px;
+}
+.header-3 div:first-child ul li {
+  padding-left: 25px;
+}
+.header-3 div:first-child ul li a {
+  color: white;
+}
+.header-3 div:first-child ul li:last-child {
+  border: 1px solid white;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+}
+.header-3 div:last-child {
+  margin: 0px auto;
+  width: 1240px;
+  height: 40px;
+}
+.header-3 div:last-child ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+.header-3 div:last-child ul li {
+  height: 40px;
+}
+.header-3 div:last-child ul li a {
+  color: white;
+  font-size: 12px;
+  height: 40px;
+  display: block;
+}
+.header-3 div:last-child ul li:first-child a {
+  font-weight: bold;
+}
+.header-3 div:last-child ul li:nth-child(3) ul {
+  display: none;
+}
+.header-3 div:last-child ul li:nth-child(3):hover ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 1240px;
+  height: 300px;
+  border: 1px solid black;
+  background: linear-gradient(to bottom , yellow, rgb(96, 199, 96));
+}
+.header-2 ul li:hover {
+  background-color: rgb(37, 100, 218);
+}
+.header-3 div:last-child li:hover {
+  background-color: rgb(21, 107, 168);
+}
+body {
+  background-color: #F4F4F4;
+}
+#content {
+  width: 1240px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ads {
+  position: fixed;
+  width: 1240px;
+  margin: 0px auto;
+  height: 0px;
+}
+.ads img:first-child {
+  width: 150px;
+  float: left;
+  height: 400px;
+  margin-left: -160px;
+  border-radius: 10px;
+}
+.ads img:last-child {
+  width: 150px;
+  float: right;
+  height: 400px;
+  margin-right: -160px;
+  border-radius: 10px;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6d9d9;
+  position: relative;
+}
+.menu > ul > li {
+  width: 242px;
+  height: 33px;
+}
+.menu > ul > li > a {
+  display: inline-block;
+  width: 242px;
+  height: 33px;
+  padding-left: 5px;
+  line-height: 33px;
+  position: relative;
+}
+.menu > ul > li:hover > a {
+  background-color: #189EFF;
+  color: aliceblue;
+  box-shadow: 0px 2px 5px #189EFF;
+}
+.menu > ul > li > a > span {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  border-top: 16.5px solid transparent;
+  border-right: 16.5px solid transparent;
+  border-bottom: 16.5px solid transparent;
+  border-left: 16.5px solid #189effcf;
+}
+.menu > ul > li:hover > a > span {
+  display: block;
+}
+.menu > ul > li > div {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: calc(1240px - 242px);
+  height: 528px;
+  box-shadow: 0px 2px 5px gray;
+}
+.menu > ul > li:hover > div {
+  display: block;
+}
+.img-content {
+  display: flex;
+}
+.content-left {
+  display: flex;
+  width: 584px;
+  flex-wrap: wrap;
+}
+.content-left div:not(:first-child) {
+  width: 292px;
+  height: 181px;
+}
+.content-left div:first-child {
+  width: 584px;
+  height: 362px;
+}
+.content-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 412px;
+  float: right;
+}
+.content-right div {
+  width: 206px;
+  height: 181px;
+  border: 1px solid #c3bebe7a;
+}
+.content-right div:hover {
+  background-color: honeydew;
+  box-shadow: 0px 2px 5px rgb(109, 95, 95);
+}
+.middle {
+  margin-top: 35px;
+  height: 150px;
+  width: 1240px;
+  display: flex;
+  justify-content: space-between;
+}
+.middle div {
+  width: 295px;
+  border: 1px solid #c3bebe7a;
+  height: 150px;
+}
+.middle div:hover {
+  box-shadow: 0px 2px 5px rgb(109, 95, 95);
+}
+.middle2 {
+  background-color: white;
+  width: 1240px;
+  margin-top: 40px;
+}
+.middle2 > div:first-child {
+  padding: 16px;
+  border-bottom: 1px solid rgb(219, 211, 211);
+}
+.middle2 div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 200px;
+}
+.middle2 div:last-child > div {
+  width: 248px;
+  height: 303px;
+  border: 1px solid rgb(219, 211, 211);
+}
+.middle2 div:last-child > div:hover {
+  box-shadow: 0px 2px 5px rgb(109, 95, 95);
+}
