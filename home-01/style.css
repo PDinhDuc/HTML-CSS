@@ -13,8 +13,11 @@ body {
 a {
     text-decoration: none;
 }
-* ul {
+ul {
     list-style: none;
+}
+span {
+    color: black;
 }
 header {
     border-bottom: 1px solid rgb(216, 216, 216);
