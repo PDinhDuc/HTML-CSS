@@ -184,13 +184,14 @@ main {
 
 #footer1 {
     background-color: rgb(1, 160, 80);
+    display: flex;
+    justify-content: center;
 }
 .footer1 div h3, .footer1 div p, .footer1 div ul li {
     color: white;
 }
 .footer1 {
     width: 1170px;
-    margin: 0px auto;
     display: flex;
     padding-top: 50px;
     height: 345px;
