@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+span {
+    color: #5eac01;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px;
+    padding-left: 30px;
+}
+#content {
+    max-width: 980px;
+    margin: 20px auto;
+}
+#content .head-content {
+    border-bottom: 1px solid #00acc1 ;
+}
+#content .head-content > h3 {
+    background-color: #00acc1;
+    display: inline-block;
+    padding: 3px 10px;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+#content ul li {
+    flex-basis: 25%;
+    height: 40px;
+    line-height: 40px;
+}
+#content ul li a:hover  {
+    font-weight: bold;
+    color: #00acc1;
+}
+.content1 > ul > li:not(:nth-child(1)) {
+    background-image: url(https://stc-laban.zdn.vn/v5/images/ic_cate_small.png);
+    background-repeat: no-repeat;
+}
+.content1 > ul > li:nth-child(1) {
+    background-image: url(https://2-stc-laban.zdn.vn/thumbarticle/1437968024.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+}
+.content1 > ul > li:nth-child(2) {
+    background-position: 0px -2303px;
+}
+.content1 > ul > li:nth-child(3) {
+    background-position: 0px -258px;
+}
+.content1 > ul > li:nth-child(4) {
+    background-position: 0px -208px;
+}
+.content1 > ul > li:nth-child(5) {
+    background-position: 0px -260px;
+}
+.content1 > ul > li:nth-child(6) {
+    background-position: 0px -312px;
+}
+.content1 > ul > li:nth-child(7) {
+    background-position: 0px -364px;
+}
+.content1 > ul > li:nth-child(8) {
+    background-position: 0px -416px;
+}
+.content1 > ul > li:nth-child(9) {
+    background-position: 0px -468px;
+}
+.content1 > ul > li:nth-child(10) {
+    background-position: 0px -520px;
+}
+.content1 > ul > li:nth-child(11) {
+    background-position: 0px -572px;
+}
+.content1 > ul > li:nth-child(12) {
+    background-position: 0px -624px;
+}
+.content1 > ul > li:nth-child(13) {
+    background-position: 0px -676px;
+}
+.content1 > ul > li:nth-child(14) {
+    background-position: 0px -727px;
+}
+.content1 > ul > li:nth-child(15) {
+    background-position: 0px -778px;
+}
+.content1 > ul > li:nth-child(16) {
+    background-position: 0px -829px;
+}
+.content1 > ul > li:nth-child(17) {
+    background-position: 0px -880px;
+}
+.content1 > ul > li:nth-child(18) {
+    background-position: 0px -931px;
+}
+.content1 > ul > li:nth-child(19) {
+    background-position: 0px -982px;
+}
+.content2 > ul > li {
+    background-image: url(https://stc-laban.zdn.vn/v5/images/ic_cate_small.png);
+    background-repeat: no-repeat;
+}
+.content2 > ul > li:nth-child(1) {
+    background-position: 0px -1033px;
+}
+.content2 > ul > li:nth-child(2) {
+    background-position: 0px -1084px;
+}
+.content2 > ul > li:nth-child(3) {
+    background-position: 0px -1135px;
+}
+.content2 > ul > li:nth-child(4) {
+    background-position: 0px -1186px;
+}
+.content2 > ul > li:nth-child(5) {
+    background-position: 0px -1237px;
+}
+.content2 > ul > li:nth-child(6) {
+    background-position: 0px -1288px;
+}
