@@ -402,6 +402,7 @@ header .container ul li a.active {
     margin-bottom: calc(166px - 35px);
 }
 #wedo.container > div div {
+    padding: 85px 15px 0px 15px;
     flex-basis: 25%;
     padding-top: 85px;
     background-position: center 0px;
