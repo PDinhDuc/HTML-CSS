@@ -61,8 +61,6 @@ header .container ul li a.active {
 /* ==================================hero==================== */
 #hero {
     background-image: url(images/pic.png);
-    margin: 0px;
-    height: 660px;
     background-color: #39334e;
     margin-top: 81px;
 }
