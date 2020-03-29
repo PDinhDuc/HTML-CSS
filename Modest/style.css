@@ -63,6 +63,9 @@ header .container ul li a.active {
     background-image: url(images/pic.png);
     background-color: #39334e;
     margin-top: 81px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 #hero .container {
     position: relative;
@@ -161,7 +164,8 @@ header .container ul li a.active {
     margin-top: 73px;
     list-style: none;
 }
-#content1 .container > div > div > ul li a {
+
+#content1 .container > div > div > ul > li > a {
     display: inline-block;
     height: 50px;
     width: 60px;
@@ -263,19 +267,23 @@ header .container ul li a.active {
     height: 300px;
     display: none;
 }
+#team .team div .mask > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
 #team .team div .mask ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    position: absolute;
-    top: 124px;
-    left: 60px;
+    align-items: center;
 }
-#team .team div .mask ul li {
+#team .team div .mask div ul li {
     background-color: #1d2126;
     margin-right: 1px;
 }
-#team .team > div div.mask > ul > li > a {
+#team .team > div div.mask > div > ul > li > a {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -284,13 +292,13 @@ header .container ul li a.active {
     background-position: center center;
     background-color: #3a454d;
 }
-#team .team > div div.mask > ul > li:nth-child(1) a {
+#team .team > div div.mask > div > ul > li:nth-child(1) a {
     background-image: url(images/icons/tw.png);
 }
-#team .team > div div.mask > ul > li:nth-child(2) a {
+#team .team > div div.mask > div > ul > li:nth-child(2) a {
     background-image: url(images/icons/fb.png);
 }
-#team .team > div div.mask > ul > li:nth-child(3) a {
+#team .team > div div.mask > div > ul > li:nth-child(3) a {
     background-image: url(images/icons/in.png);
 }
 #team .team > div:hover > div.mask {
@@ -571,6 +579,9 @@ footer .container ul li a {
     text-indent: -9999px;
     background-position: center center;
     background-repeat: no-repeat;
+}
+footer .container ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 footer .container ul li:nth-child(1) a {
     background-image: url(images/icons/tw.png);
