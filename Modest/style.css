@@ -92,7 +92,7 @@ header .container ul li a.active {
     line-height: 44px;
     margin-right: 15px;
     border: 2px solid white;
-    padding: 0px 28px 0px 20px;
+    padding: 0px 28px;
     font-size: 14px;
     color: white;
     border-radius: 3px;
@@ -329,6 +329,9 @@ header .container ul li a.active {
     margin-bottom: 30px;
     position: relative;
 }
+#lovely-work .container > div div img {
+    height: 265px;
+}
 #lovely-work .container > div div div.mask {
     position: absolute;
     width: 360px;
@@ -343,8 +346,9 @@ header .container ul li a.active {
     bottom: 0px;
     left: 0px;
     font-size: 18px;
-    line-height: 42px;
-    padding: 12px 20px;
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
     background-color: #292f36;
     color: white;
     text-transform: uppercase;
@@ -479,6 +483,7 @@ header .container ul li a.active {
     line-height: 26px;
     text-transform: uppercase;
     color: #292f36;
+    margin-bottom: 40px;
 }
 #stay-touch .container > div p {
     font-size: 16px;
@@ -510,19 +515,24 @@ header .container ul li a.active {
 }
 #stay-touch .container form > div div div input {
     width: 100%;
+    line-height: 44px;
+    padding-left: 20px;
     height: 44px;
     border-radius: 3px;
     background-color: #eaeef1;
     border: none;
     margin-bottom:  30px;
+    font-size: 16px;
 }
-#stay-touch .container form > div > div:nth-child(2) >  input {
+#stay-touch .container form > div > div:nth-child(2) >  textarea {
     width: 100%;
     height: 160px;
     border-radius: 3px;
     background-color: #eaeef1;
     border: none;
     margin-bottom: 30px;
+    padding: 20px;
+    font-size: 16px;
 }
 #stay-touch .container form > div > div:last-child > button {
     height: 45px;
@@ -532,6 +542,9 @@ header .container ul li a.active {
     border-radius: 6px;
     text-transform: uppercase;
     color: white;
+}
+#stay-touch .container form > div > div:last-child > button:hover {
+    opacity: 0.8;
 }
 footer {
     height: 50px;
@@ -635,6 +648,7 @@ footer .container ul li:nth-child(5) a {
     }
     #lovely-work .container > div div div.mask h4 {
         width: 260px;
+        bottom: -29px;
     }
     #lovely-work .container div:last-child {
         display: flex;
@@ -706,10 +720,16 @@ footer .container ul li:nth-child(5) a {
     #lovely-work .container > div div {
         margin: 15px;
     }
-    #lovely-work .container > div div div.mask {
+    #lovely-work .container > div > div > div.mask {
         height: 192px;
-        top: -15px;
-        left: -15px;
+        width: 260px;
+        margin: 0px;
+    }
+    #lovely-work .container > div div div.mask h4 {
+        width: 260px;
+        bottom: 0px;
+        height: 50px;
+        line-height: 50px;
     }
     #lovely-work .container > div div img {
         height: 192px;
