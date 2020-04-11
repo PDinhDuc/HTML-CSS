@@ -1119,6 +1119,12 @@ footer .container ul li:nth-child(5) a {
             font-size: 9px;
             color: #8d8f92;
         }
+        #team .team > div div.mask > div > ul > li > a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-size: 10px 10px;
+        }
         #lovely-work .container > div > div {
             max-width: 100%;
             height: auto;
