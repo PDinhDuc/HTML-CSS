@@ -24,7 +24,7 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
 }
 header .container {
@@ -237,35 +237,44 @@ header .container ul li a.active {
     display: flex;
     justify-content: space-between;
 }
-
 #team .team > div {
     background-color: #e1e6ea;
-    position: relative;
     margin-bottom: 100px;
+    max-width: 25%;
+}
+#team .team > div > div {
+    position: relative;
+}
+#team .team > div > div img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 #team .team div .infor {
     height: 75px;
-    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
 }
 #team .team div .infor h4 {
-    margin: 9px 0px 0px 20px;
     font-size: 16px;
-    line-height: 35px;
     text-transform: uppercase;
     font-weight: normal;
 }
 #team .team div .infor p {
-    margin: -6px 0px 14px 20px;
     font-size: 14px;
-    line-height: 26px;
     color: #8d8f92;
+}
+#team .team div .infor input {
+    display: none;
 }
 #team .team div .mask {
     top: 0px;
     left: 0px;
     position: absolute;
-    width: 263px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     display: none;
 }
 #team .team div a {
@@ -275,7 +284,7 @@ header .container ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 100%;
 }
 #team .team div .mask ul {
     display: flex;
@@ -305,11 +314,11 @@ header .container ul li a.active {
 #team .team > div div.mask > div > ul > li:nth-child(3) a {
     background-image: url(images/icons/in.png);
 }
-#team .team > div:hover > div.mask {
+#team .team > div:hover > div > div.mask {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.5);
 }
-#team .team > div > div.mask ul li:hover a{
+#team .team > div > div > div.mask ul li:hover a{
     background-color: #4e5a62;
 }
 #team .team > div:hover div.infor {
@@ -335,23 +344,26 @@ header .container ul li a.active {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#lovely-work .container > div div {
+#lovely-work .container > div > div {
     margin-bottom: 30px;
-    position: relative;
+    max-width: calc((100% - 60px) /3);
 }
 #lovely-work .container > div div img {
-    height: 265px;
+    height: 100%;
+}
+#lovely-work .container > div > div > div {
+    position: relative;
 }
 #lovely-work .container > div div div.mask {
     position: absolute;
-    width: 360px;
-    height: 265px;
-    top: 0px;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
     left: 0px;
     display: none;
 }
 #lovely-work .container > div div div.mask h4 {
-    width: 360px;
+    width: 100%;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -364,16 +376,16 @@ header .container ul li a.active {
     text-transform: uppercase;
     font-weight: normal;
 }
-#lovely-work .container div div:hover div.mask {
+#lovely-work .container div div:hover > div > div.mask {
     display: inline-block;
     background-image: url(images/icons/plus.png);
     background-repeat: no-repeat;
-    background-position: center 93px;
+    background-position: center center;
     background-color: rgba(155, 141, 141, 0.6);
 }
 #lovely-work .container div:last-child {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 #lovely-work .container button {
     width: 151px;
@@ -633,30 +645,26 @@ footer .container ul li:nth-child(5) a {
     }
     /* ------------------------------meet  the team---------------- */
     #team .team > div {
-        max-width: 24%;
+        max-width: calc((100% - 60px) /4);
+        height: 100%;
     }
     #team .team > div img {
         width: 100%;
-        height: 270px;
+        height: 100%
     }
     #team .team div .infor {
         height: 60px;
-        margin-top: -15px;
     }
     #team .team div .mask {
-        height: 270px;
     }
     /* -------------------------lovely-work-------------------- */
-    #lovely-work .container > div div img {
-        width: 260px;
+    #lovely-work .container > div > div {
+        max-width: calc((100% - 60px) /3);
     }
-    #lovely-work .container > div div div.mask {
-        width: 260px;
-        height: 236px;
+    #lovely-work .container > div div img {
+        width: 100%;
     }
     #lovely-work .container > div div div.mask h4 {
-        width: 260px;
-        bottom: -29px;
     }
     #lovely-work .container div:last-child {
         display: flex;
@@ -689,9 +697,17 @@ footer .container ul li:nth-child(5) a {
     }
 }
 /* =======================         960px           ======================= */
+/* =====================   ========
+====================
+==================
+============== */
+
 @media screen and (max-width: 960px) {
     .container {
         padding: 0px 20px;
+    }
+    .container .border-left {
+        margin-top: 0px;
     }
     header .container {
         justify-content: space-between;
@@ -736,12 +752,14 @@ footer .container ul li:nth-child(5) a {
         margin: 50px 0px 40px 0px;
     }
     #team .team {
-        justify-content: space-between;
-        margin-bottom: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     #team .team > div {
-        max-width: calc((100% - 60px) /4);
-        margin-right: 5px;
+        max-width: calc((100% - 60px) /2);
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 50px;
     }
 
     #lovely-work {
@@ -751,22 +769,20 @@ footer .container ul li:nth-child(5) a {
         margin-bottom: 40px;
     }
     #lovely-work .container > div {
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    #lovely-work .container > div div {
-        max-width: calc((100% - 60px)/3);
+    #lovely-work .container > div > div {
+        max-width: calc((100% - 40px) / 2);
         height: auto;
+        margin-bottom: 30px;
+    }
+    #lovely-work .container > div div img {
+        max-width: 100%;
     }
     #lovely-work .container > div > div > div.mask {
         height: 192px;
         width: 260px;
         margin: 0px;
-    }
-    #lovely-work .container > div div div.mask h4 {
-        width: 260px;
-        bottom: 0px;
-        height: 50px;
-        line-height: 50px;
     }
     #lovely-work .container > div div img {
         height: auto;
@@ -791,6 +807,9 @@ footer .container ul li:nth-child(5) a {
         flex-basis: calc((100% - 20px) /2);
         padding-bottom: 40px;
     }
+    #features {
+        padding-top: 50px;
+    }
     #features .container > div div {
         flex-basis: calc((100% - 60px)/3);
     }
@@ -804,12 +823,13 @@ footer .container ul li:nth-child(5) a {
         width: 100%;
     }
     #features .container > div div h4 {
-        margin: 20px 0px;
+        margin-bottom: 40px;
     }
     #features .container > div > div > img {
         width: 100%;
     }
-    #stay-touch .container form {
+    #stay-touch .container .border-left {
+        margin-top: 50px;
     }
     #stay-touch .container form > div > div:first-child {
         display: block;
@@ -866,11 +886,11 @@ footer .container ul li:nth-child(5) a {
         display: inline-block;
         background-repeat: no-repeat;
     }
-    header .container input[type="checkbox"]:checked ~ ul {
+    header > .container > #active:checked ~ ul {
         right: 0px;
         top: 100%;
     }
-    header .container input[type="checkbox"]:checked + label {
+    header .container > #active:checked + label {
         background-image: url(https://www.sendai-airport.co.jp/special/201912winter/m/dist/images/common/btn-pop-close.png);
         transform: rotate(90deg);
     }
@@ -904,13 +924,14 @@ footer .container ul li:nth-child(5) a {
         justify-content: center;
     }
     #content1 .container > div > div > ul li {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
         margin-right: 5px;
     }
     #content1 .container > div > div > ul li a {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
+        background-size: 15px 15px;
     }
     #content1 .container > div > ol {
         width: 100%;
@@ -922,46 +943,64 @@ footer .container ul li:nth-child(5) a {
     #team .team {
         justify-content: space-around;
         flex-wrap: wrap;
+        margin-bottom: 20px;
     }
     #team .team > div {
         max-width: calc((100% - 60px) /2);
-        margin: 15px;
+        margin: 15px 0px;
+    }
+    #team .team div .infor {
+        padding-left: 10px;
+        position: relative;
     }
     #team .team div .mask {
-        height: auto;
+        height: 100%;
+        transition: all 1.5s;
     }
-    
+
+    #team .team div input { 
+        display: none;    
+    }
+    #team .team > div:hover > div > div.mask {
+        opacity: 0;
+    }
+    #team .team > div:hover div.infor {
+        background-color: transparent;
+    }
+    #team .team > div:hover div.infor h4{
+        color: black;
+    }
+    #team .team > div:hover div.infor p {
+        color: #8d8f92;
+    }
+    #team .team > div > div input:checked ~ div.mask {
+        display: inline-block; 
+        opacity: 1;
+    }
+    #team .team div label {
+        position: absolute;
+        bottom: -50px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+        background-image: url(https://cdn1.iconfinder.com/data/icons/color-bold-style/21/43-512.png);
+        background-position: center center;
+        background-size: 30px 30px;
+    }
+
     #team .team > div img {
         height: auto;
-    }
-    #team .team div > a {
-        position: absolute;
-        display: block;
-        bottom: 10px;
-        right: 20px;
-        height: 40px;
-        width: 40px;
-        background-color: transparent;
-        text-indent: -9999px;
-        background-image: url(https://cdn1.iconfinder.com/data/icons/network-and-communication-2-4/48/82-512.png);
-        background-position: center center;
-        background-size: 40px 40px;
-        background-repeat: no-repeat;
-    }
-    #team .team div .mask > a:active ~ .mask {
-        display: block;
-        animation-name: name;
-        animation-duration: 2s;
     }
     /* ===================lovely================ */
     #lovely-work .container .border-left {
         border-left: none;
     }
-    #lovely-work .container > div div {
-        max-width: calc((100% - 60px) /2);
-    }
-    #lovely-work .container > div {
-        justify-content: space-around;
+
+    #lovely-work .container > div div div.mask h4 {
+        padding-left: 10px;
+        height: 40px;
+        line-height: 40px;
     }
     /* ===========what we do=============== */
     #wedo.container > div {
@@ -987,6 +1026,7 @@ footer .container ul li:nth-child(5) a {
     #features .container > div {
         display: block;
     }
+
     #features .container > div div p {
         padding-bottom: 40px;
     }
