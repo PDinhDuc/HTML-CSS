@@ -386,7 +386,7 @@ header .container ul li a.active {
     background-position: center center;
     background-color: rgba(155, 141, 141, 0.6);
 }
-#lovely-work .container div:last-child {
+#lovely-work .container  > div:last-child {
     display: flex;
     justify-content: center;
 }
